@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HJCommonTools"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A short description of HJCommonTools."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "CommonTools/CommonTools/HJCommonTools/*","CommonTools/CommonTools/HJCommonTools/*/*"
+  s.source_files  = "CommonTools/CommonTools/HJCommonTools/*"
+
+  s.subspec 'AlertManager' do |ss|
+    ss.source_files = 'CommonTools/CommonTools/HJCommonTools/AlertManager/*'
+  end
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
