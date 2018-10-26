@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   s.source_files  = "CommonTools/CommonTools/HJCommonTools/HJCommonTools.h"
 
   s.subspec 'Base' do |ss|
-    ss.source_files = 'CommonTools/CommonTools/HJCommonTools/Base/**/*'
+    ss.source_files = 'CommonTools/CommonTools/HJCommonTools/Base/*'
   end
 
   s.subspec 'AlertManager' do |ss|
