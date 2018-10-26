@@ -144,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				C4073563218226910020B09F /* AlertManager */,
+				C4073568218226910020B09F /* BaseShareManager.h */,
 				C4073566218226910020B09F /* BaseShareManager.m */,
 				C4073567218226910020B09F /* Macro.h */,
 			);
@@ -153,7 +154,6 @@
 		C4073563218226910020B09F /* AlertManager */ = {
 			isa = PBXGroup;
 			children = (
-				C4073568218226910020B09F /* BaseShareManager.h */,
 				C4073564218226910020B09F /* AlertManager.m */,
 				C4073565218226910020B09F /* AlertManager.h */,
 			);
