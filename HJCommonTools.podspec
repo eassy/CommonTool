@@ -91,14 +91,19 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "CommonTools/CommonTools/HJCommonTools/*"
+  s.source_files  = "CommonTools/CommonTools/HJCommonTools/HJCommonTools.h"
+
+  s.subspec 'Base' do |ss|
+    ss.source_files = 'CommonTools/CommonTools/HJCommonTools/Base/**/*'
+  end
 
   s.subspec 'AlertManager' do |ss|
-    ss.source_files = 'CommonTools/CommonTools/HJCommonTools/AlertManager/*'
+    ss.source_files = 'CommonTools/CommonTools/HJCommonTools/AlertManager/**/*'
+    ss.dependency 'HJCommonTools/Base'
   end
   #s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  #s.public_header_files = "CommonTools/CommonTools/HJCommonTools/Macro.h","CommonTools/CommonTools/HJCommonTools/BaseShareManager.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
