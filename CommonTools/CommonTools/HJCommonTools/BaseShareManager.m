@@ -7,8 +7,6 @@
 //
 
 #import "BaseShareManager.h"
-#import <objc/runtime.h>
-#import <objc/message.h>
 
 @implementation BaseShareManager
 
@@ -17,12 +15,8 @@
     static  BaseShareManager *manager;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
-        
         manager = [[self alloc] init];
-        SEL commonInit = NSSelectorFromString(@"commonInit");
-        objc_msgSend(manager,commonInit);
-        
-//        [manager commonInit];
+        [manager performSelector:@selector(commonInit) withObject:nil];
     });
     return manager;
 }

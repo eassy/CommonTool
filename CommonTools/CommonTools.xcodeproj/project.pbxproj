@@ -154,8 +154,8 @@
 		C4073563218226910020B09F /* AlertManager */ = {
 			isa = PBXGroup;
 			children = (
-				C4073564218226910020B09F /* AlertManager.m */,
 				C4073565218226910020B09F /* AlertManager.h */,
+				C4073564218226910020B09F /* AlertManager.m */,
 			);
 			path = AlertManager;
 			sourceTree = "<group>";
@@ -465,7 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8KY8X4895;
-				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = CommonTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -483,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8KY8X4895;
-				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = CommonTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
